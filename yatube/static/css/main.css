@@ -1,0 +1,23 @@
+
+span {color:red
+}
+.carousel-control-next-icon {
+    background-image: url(../img/next.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 100px;
+    height: 100px;
+}
+.carousel-control-next {
+    right: -80px;
+}
+.carousel-control-prev-icon {
+    background-image: url(../img/prev.png);
+}
+.carousel-control-prev {
+    left: -80px;
+}
+.card {border-color:red; 
+}
+.my_text {padding: 15px
+}

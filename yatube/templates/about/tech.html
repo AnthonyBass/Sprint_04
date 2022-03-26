@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+<div class="row">
+  <h1 style="text-align: center">Вот что я умею </h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python
+      </li>
+      <li class="list-group-item">
+        Django
+      </li><li class="list-group-item">
+        Bootstrap
+      </li>
+      <li class="list-group-item">
+        HTML, CSS
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+    <p>
+      Я думал потратить пол часа на данное задание, но меня очень затянула настройка карусели на странице "об авторе".<br>
+      Так что уже совсем нет времени на подробности...<br>
+      Хотя бы посмотрите еще раз как мило выглядит каусель: <a href="{% url 'about:author' %}">Об авторе<br></a>
+      Ну а я пошел нагонять. Потом допишу))
+    </p>
+  </article>
+</div>
+{% endblock %} 

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+  <div class="container py-5">
+  <h1 style="text-align: center">Об авторе проекта</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-block w-50" style="margin-left: auto; margin-right: auto;">
+          <div class="card">
+            <img src="{% static 'img/me.png' %}" class="d-block w-100" alt="...">
+            <div class="my_text">
+              <p>
+                Привет! Меня зовут Антон Басалаев.
+              </p>
+              <p>
+                Живу в замечательном городе Санкт- Петербург. С 2022 года я решил окунуться 
+                в мир нулей и едениц, а точнее начал обучение по программе Яндекс Практикума "Python Backend разработчик"<br>
+              </p>
+              <p>
+                Занимаюсь логистикой, преимущественно вожу всякие большие штуковины из стран Азии.
+              </p>
+              <p>
+                <a href=https://github.com/AnthonyBass target="_blank"> Ссылка на мой git аккаунт</a>
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-50" style="margin-left: auto; margin-right: auto;">
+          <div class="card">
+            <img src="{% static 'img/band.png' %}" class="d-block w-100" alt="...">
+            <div class="my_text">
+              <p>
+                Мой дзен - это музыка. Служу бас гитаристом в группе Между Крыш.<br>
+              <a href=https://vk.com/mkr_band target="_blank"> Ссылочка на страницу нашего бэнда =)</a> 
+              </p>  
+            </div>                       
+          </div>  
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-50" style="margin-left: auto; margin-right: auto;">
+          <div class="card">
+            <img src="{% static 'img/dog.png' %}" class="d-block w-100" alt="...">
+            <div class="my_text">
+              <p>
+                С нами живет толстая 45 килограммовая <strike>хрюха</strike> собака Деля.<br>
+                Пожалуй это главный источник счастья))
+              </p>
+            </div>                       
+          </div>  
+        </div>  
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden" colour=black>Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" background-image:src="{% static 'img/right.png' %}"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+{% endblock %} 

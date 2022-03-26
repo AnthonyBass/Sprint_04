@@ -1,0 +1,13 @@
+<article>
+  <ul>
+    <li>
+      Автор: {{user_name.get_full_name}}<br>
+      <a href="{% url 'posts:profile' user_name %}">Все посты пользователя</a>
+    </li>
+    <li>
+      Дата публикации: {{post.pub_date|date:"d E Y" }}
+    </li>
+  </ul>      
+  <p>{{post.text|linebreaksbr }}</p>
+  <a href="<!-- -->">подробная информация </a><br>
+  <a href="{% url 'posts:group_posts' post.group.slug %}">Все записи группы</a> 
